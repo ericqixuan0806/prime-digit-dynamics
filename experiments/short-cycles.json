@@ -1,0 +1,58 @@
+[
+  {
+    "n": 1,
+    "max_product": 10,
+    "products": 0,
+    "ordered_words": 0,
+    "integral_above_bound": 0,
+    "cycles": []
+  },
+  {
+    "n": 2,
+    "max_product": 100,
+    "products": 0,
+    "ordered_words": 0,
+    "integral_above_bound": 0,
+    "cycles": []
+  },
+  {
+    "n": 3,
+    "max_product": 1000,
+    "products": 0,
+    "ordered_words": 0,
+    "integral_above_bound": 0,
+    "cycles": []
+  },
+  {
+    "n": 4,
+    "max_product": 10000,
+    "products": 0,
+    "ordered_words": 0,
+    "integral_above_bound": 0,
+    "cycles": []
+  },
+  {
+    "n": 5,
+    "max_product": 100000,
+    "products": 0,
+    "ordered_words": 0,
+    "integral_above_bound": 0,
+    "cycles": []
+  },
+  {
+    "n": 6,
+    "max_product": 1000005,
+    "products": 1,
+    "ordered_words": 36,
+    "integral_above_bound": 80,
+    "cycles": []
+  },
+  {
+    "n": 7,
+    "max_product": 10000063,
+    "products": 7,
+    "ordered_words": 5194,
+    "integral_above_bound": 316,
+    "cycles": []
+  }
+]

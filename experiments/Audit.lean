@@ -1,0 +1,53 @@
+import PrimeDynamics
+open PrimeDynamics
+#print PrimeDynamics.FiniteDescent
+#print PrimeDynamics.GlobalAttraction
+#print axioms largestPrimeFactor_mem
+#print axioms le_largestPrimeFactor
+#print axioms T_prime
+#print axioms no_fixed_point
+#print axioms ascent_iff
+#print axioms explicit_descent
+#print axioms cycle_nodup
+#print axioms cycle_length
+#print axioms cycle_primes
+#print axioms Certificate.primeOK_sound
+#print axioms Certificate.edgeOK_sound
+#print axioms finiteBase_verified
+#print axioms finiteDescent_iff_globalAttraction
+#print axioms affine_identity
+#print axioms error_bound
+#print axioms first_crossing_descent
+#print axioms first_crossing_iff_descent
+#print axioms distinct_prefix_bound
+#print axioms descending_edge_bound
+#print axioms weight_step
+#print axioms reciprocal_budget
+#print axioms cycleEdge23
+#print axioms cycleEdge233
+#print axioms cycleEdge2333
+#print axioms cycleEdge23333
+#print axioms cycleEdge661
+#print axioms cycleEdge601
+#print axioms cycleEdge6011
+#print axioms cycleEdge6679
+#print axioms cycleEdge997
+#print axioms cycleEdge907
+#print axioms cycleEdge313
+#print axioms cycleEdge241
+#print axioms cycleEdge2411
+#print axioms cycleEdge47
+#print axioms cycleEdge53
+#print axioms cycleEdge41
+#print axioms cycleEdge137
+#print axioms cycleEdge17
+#print axioms cycleEdge59
+#print axioms cycleEdge599
+#print axioms cycleEdge857
+#print axioms cycleEdge953
+#print axioms cycleEdge9533
+#print axioms cycleEdge13619
+#print axioms cycleEdge19457
+#print axioms cycleEdge821
+#print axioms correction_sum_eq
+#print axioms normalized_endpoint

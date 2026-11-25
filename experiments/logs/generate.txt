@@ -1,0 +1,3 @@
+Python 3.12.14, SymPy 1.14.0
+base.tsv.gz: 3850 certified states
+million.tsv.gz: 102281 certified states

@@ -1,0 +1,3 @@
+1 11 {'admissible': 11}
+2 27 {'obstructed': 3, 'admissible': 23, 'nonprimitive': 1}
+3 64 {'obstructed': 7, 'nonprimitive': 8, 'admissible': 49}

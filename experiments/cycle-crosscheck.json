@@ -1,0 +1,37 @@
+[
+  {
+    "n": 1,
+    "words": 0,
+    "distinct_candidate_seeds": 0
+  },
+  {
+    "n": 2,
+    "words": 0,
+    "distinct_candidate_seeds": 0
+  },
+  {
+    "n": 3,
+    "words": 0,
+    "distinct_candidate_seeds": 0
+  },
+  {
+    "n": 4,
+    "words": 0,
+    "distinct_candidate_seeds": 0
+  },
+  {
+    "n": 5,
+    "words": 0,
+    "distinct_candidate_seeds": 0
+  },
+  {
+    "n": 6,
+    "words": 36,
+    "distinct_candidate_seeds": 80
+  },
+  {
+    "n": 7,
+    "words": 5194,
+    "distinct_candidate_seeds": 307
+  }
+]

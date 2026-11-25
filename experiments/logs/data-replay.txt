@@ -1,0 +1,14 @@
+identical  experiments/base.tsv.gz
+identical  experiments/million.tsv.gz
+identical  experiments/branches.json
+identical  PrimeDynamics/CertificateData.lean
+identical  PrimeDynamics/CertificateReplay.lean
+identical  PrimeDynamics/TrialData.lean
+identical  PrimeDynamics/Cycle.lean
+identical  experiments/statistics.json
+identical  experiments/short-cycles.json
+identical  experiments/cycle-crosscheck.json
+identical  experiments/contraction.json
+identical  experiments/reciprocal-budget.json
+identical  experiments/logs/constants.txt
+identical  experiments/logs/branches.txt

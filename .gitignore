@@ -1,0 +1,15 @@
+.lake/
+__pycache__/
+*.pyc
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.xdv
+
+# Owner-designated local research materials
+/RESEARCH_MISSION.md
+/paper/
