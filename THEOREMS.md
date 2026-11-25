@@ -24,3 +24,11 @@
 | R3 | 任一无界轨道存在 0<L(p)<∞ 使 M_n p_n/10ⁿ→L(p)，故 M_n/10ⁿ→0；任一有界轨道有 M_n/10ⁿ→+∞。 | 手证。无界轨道互异且趋向无穷；R2 使单调的乘积修正有有限上界。有界轨道每一步的修正至少为 1+1/(10B)。无界轨道存在与否仍待证。 |
 | R4 | 相邻严格新高 R、S 间，长度 h，段内最小 Y≥19、前置点互异，余因子积除以 10ʰ 等于 (R/S)(1+O(1/log Y))。 | 手证，R2；reciprocal_budget.py 另核对了 28767 段的精确乘积恒等式。 |
 | R5 | X_i=M_i/10ⁱ。任一轨道无界当且仅当 ΣX_i 有限；无界且始终不低于起点 p 时，该和为 O(p/log p)，常数与大起点无关。 | 手证，使用 R2、R3 和 1≤d_i≤9。精确有限恒等式 X_n p_n=p+Σ_{i<n}d_i X_i/10 已由 Lean 的 normalized_endpoint 核验。 |
+| S1 | 定义 Sᵣ 为 p≥11 的素数中前 r 步均不低于 p 的种子集。若 pᵢ≥p，则 Mᵢ≤11ⁱ。若在第 j≤r 步首次跌破起点且 p≥18·11ʳ，则 2(10ʳ+1)(p−pⱼ)≥p。 | Lean，SurvivalWindows.lean 中的 cofactor_cap、intercept_cap、descent_gap。证明保留全部中间余因子。 |
+| S2 | Sᵣ(x)=#(Sᵣ∩[1,x])。每个固定 r≥1 有 Sᵣ(x)≪ᵣx/(log x)^(r+1)。对 k=r+1≥3、log x≥4R_k，有 Sᵣ(x)≤(Dk log k)^k x/(log x)^k，D 为绝对常数。 | 人工证明。S1、余因子词计数、CRT、Ford/Dubbe 上界筛和 Rosser–Schoenfeld 的系数估计。分支与常数核验见 references/SIEVE_AUDIT.md。 |
+| S3 | B={p>23333 为素数，所有正步均不低于 p}。对充分大的 x，#(B∩[1,x])≪x exp(−c√(log x log log x))，可取 c=2·10⁻⁹。 | 人工证明。B⊆Sᵣ 对每个 r 成立；在 S2 的一致范围内选 k=⌊10⁻⁸√(log x/log log x)⌋。这是对原猜想直接反例种子数量的上界。 |
+| S4 | 写 K=2r(10ʳ+1)、Wᵣ(q)=1_{q∈Sᵣ}/q。若全段 p₀,…,pₙ≥Y≥18·11ʳ，r≥1，则 Σ_{i<n}1/pᵢ+K/p₀≤(K+r)/Y+(K+1)Σ_{i<n}Wᵣ(pᵢ)，允许重复。 | Lean，WindowBudget.lean 中的 payable_window、finite_window_budget。有首降时整块支付倒数和；否则只收一个存活起点的费用；最后不足 r 步单独计入。 |
+| S5 | 所有节点 ≥Y、前置节点互异的任意长有限段，Σ_{a≤i<b}1/pᵢ≪exp(−c√(log Y log log Y))，对充分大 Y 一致。其非负对数乘积误差满足同阶界。R5 中不低于起点的无界轨道上 ΣXᵢ≪p exp(−c√(log p log log p))。 | 人工证明。S4 与 S2 合用，只对互异种子求和。倒数尾和≤(Dk log k)^k/((k−1)(log Y)^(k−1))，K 的对数损失为 O(k)。c 同 S3。 |
+| S6 | 无界轨道上每个整数 Y>p 都有一个实际达到的 q∈[Y,10Y)，其全部未来状态 ≥q。若 Y>23333 则 q∈B；故有无界轨道将推出 B(x)≥log x/log 10−Oₚ(1)，这里 B(x) 指截至 x 的个数。 | Lean 已证明无界蕴含轨道无重复、趋向无穷和窗口结论 escaping_window。计数下界由互不相交的十进窗口得到，手证。 |
+| S7 | 假设有无界轨道。令 vⱼ 依次为各后缀达到的严格最小值，sⱼ=T(vⱼ)，ℓ=lim(vⱼ+1)/10ʲ（分子是 vⱼ 加 1）。若 ℓ=0，则 B(x)−log₁₀x→+∞。若 ℓ>0，则最终 sⱼ=D(vⱼ)，有无穷多个 vⱼ₊₁<sⱼ，且对这些 j，首次低于 sⱼ 的时间 tⱼ 有限并满足 Σ10^(−tⱼ)<∞。 | 人工证明。相邻比值至多 1；正极限使比例亏损可求和，E5 排除最终纯拼接。S1 控制有足够高度的回落，余项几何可和。近邻下界阻止短期首降的有限引理 survives_of_near_floor 已经 Lean 核验。 |
+| V1 | 相邻的两个严格局部谷值可以升高，即使两者均超过 23333。 | Lean，increasing_valleys_example 核验素数起点 673273 和四条实际边；两个谷值为 23459、38459。有限分解见 survival-windows.json。 |

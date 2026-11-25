@@ -35,3 +35,9 @@ MIT 页面标注更新至 2026-11-24 05:25 UTC。逐项对照其 SHA256SUMS 后�
 ## 重建索引
 
 从作者站点合并的 lean.tar.gz 或指定镜像 release 输入 index_archive.py。传入 git -c core.quotepath=false ls-tree -r HEAD 的输出，以核对含 Unicode 的完整路径。程序先检验归档 SHA-256，再读取每个文件。可选 --declaration-index 生成完整词法声明索引。参数 --extract 指定临时目录，保存少量选读文件。闭包只统计项目内模块，外部 import 在 rh-index.json 单列。
+
+## 首次下降窗口的再次对照
+
+在同一固定源码上复读 ChTop.lean 第 11–68 行，ch_top_main_eq 用等价和有限求和换元识别同一个主项，ch_top 随后才把每个单位的误差估计用于该量。本轮对应的具体问题是，连续上升集合 Aᵣ 与真正的 r 步未跌破种子的集合 Sᵣ 不同。我们重新构造 Sᵣ 的余因子词和 CRT 类，得到适用于该集合的上界，再在真实轨道的分块中对同一个 Sᵣ 求和。LevelOfCongruence.lean 第 50–65、105–126 行中主项与可用误差逐项比较的做法，也用于区分短期首次下降的整数余量与 Cⱼ；这里只迁移证明结构，本项目的新不等式从 D(p) 的定义推出。[ChTop.lean](https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean)
+
+再次从镜像的固定 Git 对象读取并逐字节对照选读件。ChTop.lean 的 SHA-256 为 9be04f7335746cae6bbdf52a813ae6713a90bf2a555eefc56f538bfd96af954f，ChainSlopeWindows/LevelOfCongruence.lean 为 b28d36820d558a77dd1b3d15fa0d8f13b130081b82f9439cc61bc676a137efd4。

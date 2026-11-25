@@ -12,6 +12,7 @@
 python experiments/verify.py
 python experiments/contraction.py
 python experiments/reciprocal_budget.py
+python experiments/survival_windows.py
 python experiments/short_cycles.py
 python experiments/constants.py
 python -m pip install -r experiments/requirements.txt

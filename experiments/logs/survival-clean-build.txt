@@ -1,0 +1,17 @@
+✔ [856/872] Built PrimeDynamics.Definitions
+✔ [857/872] Built PrimeDynamics.TrialProducts
+✔ [858/872] Built PrimeDynamics.OrbitContraction
+✔ [859/872] Built PrimeDynamics.CofactorSeries
+✔ [860/872] Built PrimeDynamics.Packing
+✔ [861/872] Built PrimeDynamics.TrialData
+✔ [862/872] Built PrimeDynamics.Certificate
+✔ [863/872] Built PrimeDynamics.Cycle
+✔ [864/872] Built PrimeDynamics.GrowthEdges
+✔ [865/872] Built PrimeDynamics.ReciprocalBudget
+✔ [866/872] Built PrimeDynamics.SurvivalWindows
+✔ [867/872] Built PrimeDynamics.WindowBudget
+✔ [868/872] Built PrimeDynamics.CertificateData
+✔ [869/872] Built PrimeDynamics.CertificateReplay
+✔ [870/872] Built PrimeDynamics.FiniteBase
+✔ [871/872] Built PrimeDynamics
+Build completed successfully.
