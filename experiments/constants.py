@@ -15,7 +15,7 @@ checks=[('exp(H16) < 30', exp_bounds(h16)[1]<30),
         ('exp(9/2) < 135', exp_bounds(F(9,2))[1]<135),
         ('exp(2) < 8',exp_bounds(F(2))[1]<8),
         ('exp(8) < 10^6',exp_bounds(F(8))[1]<10**6),
-        ('exp(5) > 100',exp_bounds(F(5))[0]>100),
+        ('exp(5) > 110',exp_bounds(F(5))[0]>110),
         ('(9/2)^2/8 > 2.50637',F(9,2)**2/8>F(250637,100000))]
 if not all(ok for _,ok in checks):
     raise ArithmeticError(checks)

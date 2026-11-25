@@ -51,3 +51,15 @@ open PrimeDynamics
 #print axioms cycleEdge821
 #print axioms correction_sum_eq
 #print axioms normalized_endpoint
+#print axioms product_height_bound
+#print axioms cofactor_cap
+#print axioms intercept_cap
+#print axioms descent_gap
+#print axioms survives_of_near_floor
+#print axioms state_injective_of_unbounded
+#print axioms tail_above_of_unbounded
+#print axioms escaping_window
+#print axioms increasing_valleys_example
+#print axioms orbitSum_append
+#print axioms payable_window
+#print axioms finite_window_budget

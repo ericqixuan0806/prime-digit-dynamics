@@ -1,0 +1,163 @@
+{
+  "seed_interval": [
+    23334,
+    1000000
+  ],
+  "prime_seeds": 75896,
+  "survival_and_strict_ascent": [
+    {
+      "r": 1,
+      "survival": 20783,
+      "strict_ascent": 20783,
+      "survival_with_a_nonascending_step": 0
+    },
+    {
+      "r": 2,
+      "survival": 7899,
+      "strict_ascent": 5275,
+      "survival_with_a_nonascending_step": 2624
+    },
+    {
+      "r": 3,
+      "survival": 3390,
+      "strict_ascent": 1213,
+      "survival_with_a_nonascending_step": 2177
+    },
+    {
+      "r": 4,
+      "survival": 1528,
+      "strict_ascent": 251,
+      "survival_with_a_nonascending_step": 1277
+    },
+    {
+      "r": 5,
+      "survival": 692,
+      "strict_ascent": 56,
+      "survival_with_a_nonascending_step": 636
+    },
+    {
+      "r": 6,
+      "survival": 309,
+      "strict_ascent": 8,
+      "survival_with_a_nonascending_step": 301
+    },
+    {
+      "r": 7,
+      "survival": 152,
+      "strict_ascent": 0,
+      "survival_with_a_nonascending_step": 152
+    },
+    {
+      "r": 8,
+      "survival": 67,
+      "strict_ascent": 0,
+      "survival_with_a_nonascending_step": 67
+    },
+    {
+      "r": 9,
+      "survival": 30,
+      "strict_ascent": 0,
+      "survival_with_a_nonascending_step": 30
+    },
+    {
+      "r": 10,
+      "survival": 19,
+      "strict_ascent": 0,
+      "survival_with_a_nonascending_step": 19
+    },
+    {
+      "r": 11,
+      "survival": 8,
+      "strict_ascent": 0,
+      "survival_with_a_nonascending_step": 8
+    },
+    {
+      "r": 12,
+      "survival": 5,
+      "strict_ascent": 0,
+      "survival_with_a_nonascending_step": 5
+    },
+    {
+      "r": 13,
+      "survival": 0,
+      "strict_ascent": 0,
+      "survival_with_a_nonascending_step": 0
+    }
+  ],
+  "first_descents_meeting_size_threshold_by_time": {
+    "1": 55113,
+    "2": 12884,
+    "3": 4504,
+    "4": 1269
+  },
+  "independent_CRT_enumeration_11_through_10000": {
+    "2": {
+      "word_count_before_digit_choice": 83,
+      "surviving_seeds": 276
+    },
+    "3": {
+      "word_count_before_digit_choice": 2096,
+      "surviving_seeds": 178
+    }
+  },
+  "adaptive_blocks_1024_spaced_seeds_per_horizon": {
+    "1": {
+      "descent_blocks": 3526,
+      "excursions_meeting_size_threshold": 260,
+      "proper_excursions": 300,
+      "segments": 1024,
+      "suffix_minimum_transitions": 835,
+      "survival_steps": 2515
+    },
+    "2": {
+      "descent_blocks": 1107,
+      "excursions_meeting_size_threshold": 106,
+      "proper_excursions": 119,
+      "segments": 1024,
+      "suffix_minimum_transitions": 436,
+      "survival_steps": 470
+    },
+    "3": {
+      "descent_blocks": 200,
+      "excursions_meeting_size_threshold": 67,
+      "proper_excursions": 68,
+      "segments": 1024,
+      "suffix_minimum_transitions": 385,
+      "survival_steps": 108
+    },
+    "4": {
+      "descent_blocks": 15,
+      "excursions_meeting_size_threshold": 54,
+      "proper_excursions": 54,
+      "segments": 1024,
+      "suffix_minimum_transitions": 379,
+      "survival_steps": 14
+    }
+  },
+  "increasing_consecutive_valleys": {
+    "states": [
+      673273,
+      23459,
+      234599,
+      38459,
+      384599
+    ],
+    "edge_factor_lists": [
+      [
+        7,
+        41,
+        23459
+      ],
+      [
+        234599
+      ],
+      [
+        61,
+        38459
+      ],
+      [
+        384599
+      ]
+    ]
+  }
+}
