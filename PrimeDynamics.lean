@@ -4,3 +4,6 @@ import PrimeDynamics.Packing
 import PrimeDynamics.ReciprocalBudget
 import PrimeDynamics.CofactorSeries
 import PrimeDynamics.WindowBudget
+import PrimeDynamics.RecordProducts
+import PrimeDynamics.SingleReduction
+import PrimeDynamics.RecordAnalysis

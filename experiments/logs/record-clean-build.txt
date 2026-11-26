@@ -1,0 +1,23 @@
+✔ [1378/1397] Built PrimeDynamics.Definitions
+✔ [1379/1397] Built PrimeDynamics.RecordAnalysis
+✔ [1380/1397] Built PrimeDynamics.TrialProducts
+✔ [1381/1397] Built PrimeDynamics.OrbitContraction
+✔ [1382/1397] Built PrimeDynamics.CofactorSeries
+✔ [1383/1397] Built PrimeDynamics.SingleReduction
+✔ [1384/1397] Built PrimeDynamics.Packing
+✔ [1385/1397] Built PrimeDynamics.TrialData
+✔ [1386/1397] Built PrimeDynamics.Certificate
+✔ [1387/1397] Built PrimeDynamics.Cycle
+✔ [1388/1397] Built PrimeDynamics.GrowthEdges
+✔ [1389/1397] Built PrimeDynamics.ReciprocalBudget
+✔ [1390/1397] Built PrimeDynamics.SurvivalWindows
+✔ [1391/1397] Built PrimeDynamics.WindowBudget
+✔ [1392/1397] Built PrimeDynamics.RecordProducts
+✔ [1393/1397] Built PrimeDynamics.CertificateData
+✔ [1394/1397] Built PrimeDynamics.CertificateReplay
+✔ [1395/1397] Built PrimeDynamics.FiniteBase
+✔ [1396/1397] Built PrimeDynamics
+Build completed successfully.
+✔ [1395/1397] Built PrimeDynamics.RecordProducts
+✔ [1396/1397] Built PrimeDynamics
+Build completed successfully.
