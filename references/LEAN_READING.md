@@ -41,3 +41,7 @@ MIT 页面标注更新至 2026-11-24 05:25 UTC。逐项对照其 SHA256SUMS 后�
 在同一固定源码上复读 ChTop.lean 第 11–68 行，ch_top_main_eq 用等价和有限求和换元识别同一个主项，ch_top 随后才把每个单位的误差估计用于该量。本轮对应的具体问题是，连续上升集合 Aᵣ 与真正的 r 步未跌破种子的集合 Sᵣ 不同。我们重新构造 Sᵣ 的余因子词和 CRT 类，得到适用于该集合的上界，再在真实轨道的分块中对同一个 Sᵣ 求和。LevelOfCongruence.lean 第 50–65、105–126 行中主项与可用误差逐项比较的做法，也用于区分短期首次下降的整数余量与 Cⱼ；这里只迁移证明结构，本项目的新不等式从 D(p) 的定义推出。[ChTop.lean](https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean)
 
 再次从镜像的固定 Git 对象读取并逐字节对照选读件。ChTop.lean 的 SHA-256 为 9be04f7335746cae6bbdf52a813ae6713a90bf2a555eefc56f538bfd96af954f，ChainSlopeWindows/LevelOfCongruence.lean 为 b28d36820d558a77dd1b3d15fa0d8f13b130081b82f9439cc61bc676a137efd4。
+
+## 2026-11-26　有限素因子支撑与对数乘积
+
+在已固定的镜像提交 7cbf7a0c32fca1badf05931879a37c3f8a2b03b4 上，从 LogFactorialIndices/StatementNorm.lean 第 41 行的量词追至 SignedSubspaceIndex/LogProductFormula.lean 第 10–72 行。定理对数域中的每个非零元素量化，先把其主分式理想分解到有限个非零赋值处，再用绝对范数和嵌入之积求对数；每次把乘积的对数展开前都证明相应因子非零。复读 SumLogPrimeFactorsLe.lean 中 log_absNorm_Iu 的有限支撑对数展开后，本题只取正有理数 m_b/10^t 的精确素因子支撑。有限段的乘积、正整数超额和 Matveev 的常数对同一实际分解使用；逐段变化的支撑不作统一固定集处理。上游数域定理及 RH/GRH 均未作为本题前提。所读核心证明的 SHA-256 为 92c6d4e2c228f903c9854c434e66b3ab247be7a3ed12d173b7e90ab818aa5e76。[LogProductFormula.lean](https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Formalism/LogFactorialIndices/SignedSubspaceIndex/LogProductFormula.lean)

@@ -109,5 +109,18 @@
     "sha": "0df444a360eaa60ab8c11dca51a86af692955474",
     "version": "v4.33.1",
     "lean": "v4.33.1"
+  },
+  "record_gap_logarithms": {
+    "primary": {
+      "doi": "10.1070/IM2000v064n06ABEH000314",
+      "source": "https://www.mathnet.ru/links/5646f8921f46364ead641a660a874d86/im314_eng.pdf",
+      "scope": "Checked the published statement in §2, Corollary 2.3, through the indexed journal PDF."
+    },
+    "numerical_statement": {
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/linearforms.pdf",
+      "date": "2007-05-04",
+      "scope": "Theorem 1, p. 1, real logarithms over Q.",
+      "sha256": "2e56056d28b9ceed0287d9bea0002c88f6fb2c358c212007393df1efaa680ab8"
+    }
   }
 }
