@@ -45,3 +45,7 @@ MIT 页面标注更新至 2026-11-24 05:25 UTC。逐项对照其 SHA256SUMS 后�
 ## 2026-11-26　有限素因子支撑与对数乘积
 
 在已固定的镜像提交 7cbf7a0c32fca1badf05931879a37c3f8a2b03b4 上，从 LogFactorialIndices/StatementNorm.lean 第 41 行的量词追至 SignedSubspaceIndex/LogProductFormula.lean 第 10–72 行。定理对数域中的每个非零元素量化，先把其主分式理想分解到有限个非零赋值处，再用绝对范数和嵌入之积求对数；每次把乘积的对数展开前都证明相应因子非零。复读 SumLogPrimeFactorsLe.lean 中 log_absNorm_Iu 的有限支撑对数展开后，本题只取正有理数 m_b/10^t 的精确素因子支撑。有限段的乘积、正整数超额和 Matveev 的常数对同一实际分解使用；逐段变化的支撑不作统一固定集处理。上游数域定理及 RH/GRH 均未作为本题前提。所读核心证明的 SHA-256 为 92c6d4e2c228f903c9854c434e66b3ab247be7a3ed12d173b7e90ab818aa5e76。[LogProductFormula.lean](https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Formalism/LogFactorialIndices/SignedSubspaceIndex/LogProductFormula.lean)
+
+## 2026-11-27　沿同一路径保留端点项
+
+重新从主镜像固定提交 7cbf7a0c32fca1badf05931879a37c3f8a2b03b4 读取 ChainSlopeWindows/LevelOfCongruence.lean，与先前选读件逐字节相同，SHA-256 为 b28d36820d558a77dd1b3d15fa0d8f13b130081b82f9439cc61bc676a137efd4。s_lower5 固定同一 u₀ 和 u，分别取得整除、计数与斜率不等式，通过权重非负性合并为同一个量的下界；key_identity5 把相同的对数主项重写为精确等式。对应本题，T8 只把同一段首末位的局部不等式相加。Z3 的两个有界端点函数分别控制同一返回的物理步数与余因子积，先验证每条允许的边，再沿相容路径消去中间项。端点函数及所有常数由本题模 10、模 13 的计算得到；没有用到参考项目的任何数论结论。[选读源码](https://github.com/CocoSgt/riemann-hypothesis-lean/blob/7cbf7a0c32fca1badf05931879a37c3f8a2b03b4/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean)
