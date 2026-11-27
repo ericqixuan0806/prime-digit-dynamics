@@ -139,7 +139,7 @@ theorem product_prime_witness {p q : ℕ} (hp : p.Prime) (hq : q.Prime) (n : ℕ
       have upper := le_largestPrimeFactor (extend_gt_one (iterate_prime hp n).pos) hq divides
       exact ⟨n,by omega,last,by simpa [state,Function.iterate_succ_apply',T] using upper⟩
 
-private theorem intercept_pos {p : ℕ} (hp : p.Prime) (large : 11 ≤ p) (n : ℕ) :
+theorem intercept_pos {p : ℕ} (hp : p.Prime) (large : 11 ≤ p) (n : ℕ) :
     0 < C p (n+1) := by
   induction n with
   | zero =>

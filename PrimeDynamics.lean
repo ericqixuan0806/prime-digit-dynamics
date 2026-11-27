@@ -7,3 +7,8 @@ import PrimeDynamics.WindowBudget
 import PrimeDynamics.RecordProducts
 import PrimeDynamics.SingleReduction
 import PrimeDynamics.RecordAnalysis
+import PrimeDynamics.CycleRunDivisors
+import PrimeDynamics.RecordSpacing
+import PrimeDynamics.TransferDigits
+import PrimeDynamics.AscentReturns
+import PrimeDynamics.RecordDigitWindows

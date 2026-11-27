@@ -33,6 +33,25 @@ theorem summable_record_excess {e V L : ℕ → ℝ} {a U : ℝ}
   exact (mul_le_mul_of_nonneg_right (le_trans (by linarith) (lower n)) ha.le).trans
     (up.trans (budget n))
 
+/-- A positive lower bound on the normalized heights is needed only at
+    cofinal excursion endpoints, even when each excursion contains many records. -/
+theorem summable_record_excess_at_cuts {e V : ℕ → ℝ} {a U : ℝ} (cut : ℕ → ℕ)
+    (he : ∀ i, 0 ≤ e i) (ha : 0 < a) (floor : ∀ j, a ≤ V j)
+    (cofinal : ∀ n, ∃ j, n ≤ cut j)
+    (budget : ∀ j, (∏ i ∈ range (cut j), (1+e i)) * V j ≤ U) : Summable e := by
+  let P := fun n : ℕ => ∏ i ∈ range n, (1+e i)
+  have pos (n : ℕ) : 0 ≤ P n := prod_nonneg (fun i _ => by linarith [he i])
+  have mono : Monotone P := monotone_nat_of_le_succ fun n => by
+    change P n ≤ ∏ i ∈ range (n+1), (1+e i)
+    rw [prod_range_succ]
+    exact le_mul_of_one_le_right (pos n) (by linarith [he n])
+  apply summable_record_excess (V := fun _ => a) (L := fun n => P n*a) (U := U)
+    he ha (fun _ => le_rfl) _ (fun _ => rfl)
+  intro n
+  obtain ⟨j,hj⟩ := cofinal n
+  exact (mul_le_mul_of_nonneg_right (mono hj) ha.le).trans
+    ((mul_le_mul_of_nonneg_left (floor j) (pos (cut j))).trans (budget j))
+
 /-- From counts in dyadic shells to a bound for the reciprocal tail.
     The majorant is an explicit summable input. No sieve theorem is assumed as an axiom. -/
 theorem reciprocal_tail_of_shell_counts (S : ℕ → Prop) [DecidablePred S] (Y : ℕ)
